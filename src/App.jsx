@@ -22,9 +22,9 @@ export default function App() {
 							<img src={img_url} alt={name} />
 							<div>
 								<h2>{name}</h2>
-								<span>Status: {status}</span>
-								<span>Gender: {gender}</span>
-								<span>Origin: {origin}</span>
+								<span><b>Status:</b> {status}</span>
+								<span><b>Gender:</b> {gender}</span>
+								<span><b>Origin:</b> {origin}</span>
 							</div>
 						</article>
 					)
