@@ -16,7 +16,7 @@ export default function App() {
 	return (
 		<main>
 			<section className={styles.grid}>
-				{...data.sort()(a).map(({ id, name, gender, origin, status, img_url }) => {
+				{data.map(({ id, name, gender, origin, status, img_url }) => {
 					return (
 						<article key={id}>
 							<img src={img_url} alt={name} />
