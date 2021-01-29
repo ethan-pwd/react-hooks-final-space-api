@@ -16,15 +16,15 @@ export default function App() {
 	return (
 		<main>
 			<section className={styles.grid}>
-				{data.map(({ id, name, gender, origin, status, img_url }) => {
+				{...data.sort()(a).map(({ id, name, gender, origin, status, img_url }) => {
 					return (
 						<article key={id}>
 							<img src={img_url} alt={name} />
 							<div>
 								<h2>{name}</h2>
-								<span>Status: {status}</span>
-								<span>Gender: {gender}</span>
-								<span>Origin: {origin}</span>
+								<span><b>Status:</b> {status}</span>
+								<span><b>Gender:</b> {gender}</span>
+								<span><b>Origin:</b> {origin}</span>
 							</div>
 						</article>
 					)
